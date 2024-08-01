@@ -1,16 +1,17 @@
 #!/usr/bin/python3
 """ module to document the lockboxes function"""
 
+
 def canUnlockAll(boxes):
     """
     method to determine if all boxes can be opened
     Args: boxes - a list of lists
     Return: true if all boxes can be opened else return false
     """
-    #Initialize a set to keep track of visited boxes
+    # Initialize a set to keep track of visited boxes
     visited_boxes = set()
 
-    #Start from the first box (index 0)
+    # Start from the first box (index 0)
     current_box_keys = boxes[0]
 
     while current_box_keys:
